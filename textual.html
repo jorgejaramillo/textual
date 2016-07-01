@@ -313,13 +313,13 @@ code {
 /*--HEADER--*/
 
 #header {
-width: 100%;
-border-bottom: 1px solid #F6F6F6;
-background: #fff;
-overflow: hidden;
-position: fixed;
-z-index: 8888;
-top: 0;
+    width: 100%;
+    border-bottom: 1px solid #f9f9f9;
+    background: #fff;
+    overflow: hidden;
+    position: fixed;
+    z-index: 8888;
+    top: 0;
 }
 
 
@@ -335,11 +335,10 @@ top: 0;
 }
 
 #menu a {
-margin-left: 15px;
-font-size: 13px;
-text-transform: uppercase;
-color: #050505;
-font-weight: 600;
+    margin-left: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 #menu a:hover {
@@ -355,34 +354,34 @@ font-weight: 600;
     display: none;
 }
 
-
 #search-form {
-background: #FBFBFB;
-display: block;
-float: right;
-height: 40px;
+    background: none;
+    display: block;
+    float: right;
+    height: 40px;
+    border: none;
 }
-
 #search-form:before {
     content: '';
-    height: 100%;
+    height: 80%;
     width: 1px;
-    background: #eee;
+    background: #e7e7e7;
     position: absolute;
+    margin-top: 5px;
 }
 
 #search-form input {
-    width: 200px;
-    padding: 11px;
-    font-size: 13px;
+    width: 150px;
+    padding: 9px;
+    font-size: 12px;
     text-transform: uppercase;
     line-height: 13px;
     color: #212121;
-    
     -webkit-transition: width .2s ease-out;
-       -moz-transition: width .2s ease-out;
-         -o-transition: width .2s ease-out;
-            transition: width .2s ease-out;
+    -moz-transition: width .2s ease-out;
+    -o-transition: width .2s ease-out;
+    transition: width .2s ease-out;
+    background: #fff;
 }
 
 
@@ -1316,9 +1315,11 @@ border: 1px solid #F6F6F6;
     }
     
     #menu a {
-        margin: 0;
-        display: block;
-    }
+    margin-left: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
     
     /*--SEARCH FORM--*/
     
@@ -1442,7 +1443,12 @@ border: 1px solid #F6F6F6;
 
 }
 
-
+#titlehome {
+    padding: 0pc;
+    margin-bottom: 25px;
+    font-weight: 400;
+    text-align: center;
+}
 #post-home {
     font-size: 18px;
     font-weight: normal;
@@ -1506,7 +1512,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        
         <div class="bio">
        
-        <h1>Jorge Jaramillo</h1> 
+        <h1 id="titlehome">MARKETING DIGITAL CON ÉNFASIS EN SEO</h1> 
         <p>Tengo más de 10 años de experiencia en Marketing Digital. He sido docente en diferentes Universidades y consultor para diferentes empresas en sectores como Textil, Consumo Masivo, Retail, Inmobiliario, Financiero. Participo como blogger en Hubspot, Semrush y otros blogs relacionados con Marketing Digital, SEO, Conversión y Data. Comparte contenido constantemente aquí en mi blog o en otras redes.</p>
        
 
@@ -1516,7 +1522,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <hr>
             <br>
         
-       <h4 class="metadata">Enlaces / Artículos / Quotes:</h4>
+       <h4 class="metadata">Últimas publicaciones</h4>
         {/block:IndexPage} 
          <!-- inicia Fotos -->
        
@@ -1556,7 +1562,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {block:IndexPage} 
         <div class="post">
         {block:Link}{block:Date}
-             <h2 id="post-home">({ShortMonth} {DayOfMonth}, {Year}) <a href="{URL}">{Name}</a></h2> 
+             <h2 id="post-home">{ShortMonth} {DayOfMonth}, {Year} <a href="{URL}">{Name}</a></h2> 
        {/block:Date} {/block:Link}
         </div>
         {/block:IndexPage} 
@@ -1594,7 +1600,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <!-- si es en el home use h2 para post -->
         {block:Title}{block:Date}
             <a href="{Permalink}">
-            <h2 id="post-home">({ShortMonth} {DayOfMonth}, {Year}) {block:RebloggedFrom}{lang:Reblogged}: {/block:RebloggedFrom}{Title}</h2>
+            <h2 id="post-home"><strong>{ShortMonth} {DayOfMonth}, {Year}</strong> {block:RebloggedFrom}{lang:Reblogged}: {/block:RebloggedFrom}{Title}</h2>
             </a>
         {/block:Date}{/block:Title}
         {/block:Text}
@@ -1726,11 +1732,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <form id="search-form" action="/search" method="get">
             <a href="#toggle" id="toggle"><span></span></a>
             <span><button type="submit"><span class="arrow right dark"></span></button>
-            <input type="text" name="q" value="{SearchQuery}" placeholder="BUSCAR" /></span>
+            <input type="text" name="q" value="{SearchQuery}" placeholder="BUSCADOR" /></span>
         </form>
         
-        <a href="http://jorgejaramillo.com/" >Inicio</a>
-        <a href="http://jorgejaramillo.com/yo">Jorge Jaramillo</a>
+       
+        <a href="http://jorgejaramillo.com/">Jorge Jaramillo</a>
             
         </div>
   
