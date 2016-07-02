@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://jorgejaramillo.com">
 <meta property="og:description" content="Soy Jorge Jaramillo. Me enfoqué en SEO o Posicionamiento en Buscadores. Suscríbete en mi lista de Newsletter y recibe enlaces sobre Marketing Digital.">
 <meta property="fb:app_id" content="">
-<meta property="og:image" content="http://static.tumblr.com/lmtjaoy/7nenvewdz/jorge-jaramillo.jpg" />
+<meta property="og:image" content="http://static.tumblr.com/lmtjaoy/WVJo9p1zd/jorge-jaramillo.jpg" />
 <meta property="og:type" content="business.business">    
     
     
@@ -79,8 +79,9 @@
     padding: 0;border: none;
     outline: none;
     font: inherit;
-    
+    font-family: 'Roboto', sans-serif;
     vertical-align: baseline;
+    font-weight: 300;
 
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -97,9 +98,6 @@ max-width: 100%;
 margin-bottom: 20px;
 }
 
-.metadata {
-    
-}
 
 #tumblr_controls {
     z-index: 6666 !important;
@@ -190,7 +188,12 @@ h1, h2, h3, h4, h5 {
     margin: 0 0 5% 0;
     color: #212121;
 }
-h1 {font-size: 34px;font-weight: 900; font-size: 34px;}
+h1 {    font-size: 40px;
+    font-weight: 300;
+    line-height: 56px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;}
 h2 {font-size: 32px;}
 h3 {
 font-size: 20px;
@@ -536,9 +539,6 @@ padding: 2px;
 font-family: 'Roboto', sans-serif;
 }
 
-h2 a {
-text-decoration: underline;
-}
 
 h1#quote {
 font-size: 30px;
@@ -968,7 +968,9 @@ font-size: 16px;
          -o-border-radius: 2px;
             border-radius: 2px;
 }
-
+.redestop {
+    
+}
 .post-notes li.note:before,
 .post-notes li.reblog:before {
     content: '';
@@ -1062,10 +1064,12 @@ text-transform: uppercase;
 }
 
 .bio p {
-font-size: 18px;
-line-height: 28px;
-color: #000;
-font-family: 'Roboto', sans-serif;;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 200;
 }
 
 /*--FOOTER--*/
@@ -1204,6 +1208,9 @@ border: 1px solid #F6F6F6;
         margin: 0;
     }
     
+     .metadata {
+    text-align: center;
+}
     /*--WRAPPER--*/
     
     .wrapper {
@@ -1211,9 +1218,9 @@ border: 1px solid #F6F6F6;
     }
     
     /*--POSTS--*/
-    
-    .post, .post-data, .post-notes,
-    #disqus_thread, .quote, .bio  {
+    .post, .bio {width: 95%;}
+    .post-data, .post-notes,
+    #disqus_thread, .quote  {
         width: 80%;
         max-width: 640px;
         margin: 0 auto;
@@ -1234,6 +1241,7 @@ border: 1px solid #F6F6F6;
         max-width: 100%;
         padding: 7.5% 0;
     }
+    #fechashome {font-size: 12px;}
     
 }
 
@@ -1291,6 +1299,20 @@ border: 1px solid #F6F6F6;
         margin: 0 auto;
         display: block;
     }
+    #search-form {
+        display:none;
+    }
+   #titlehome {
+    margin-top: 50px;
+    font-size: 23px;
+    }
+    .cta {min-width: 80%;}
+   #publicaciones {display:none;}
+   #videos {display:none;}
+   #fechashome {display:none;}
+   #post-home {
+    margin-bottom: 10px;
+}
     
     /*--LIGHTBOX--*/
     
@@ -1315,10 +1337,10 @@ border: 1px solid #F6F6F6;
     }
     
     #menu a {
-    margin-left: 15px;
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 400;
+    
 }
     
     /*--SEARCH FORM--*/
@@ -1451,7 +1473,7 @@ border: 1px solid #F6F6F6;
 }
 #post-home {
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 200;
     line-height: 28px;
 }
 #ctacurso {
@@ -1468,6 +1490,58 @@ border: 1px solid #F6F6F6;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+}
+
+#fechashome {
+    width: 8%;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #bcbcbc;
+}
+#tituloshome {
+    width: 92%;
+    float: right;
+}
+.metadata {
+    font-size: 25px;
+    color: #68686a;
+    font-weight: 200;
+}
+.cta {
+    width: 30%;
+    display: block;
+    margin: 20px auto;
+    border: 1px #000000 solid;
+    text-align: center;
+    height: 40px;
+    padding-top: 6px;
+    text-transform: uppercase;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #212121;
+}
+
+.portrait img {
+    height: 200px;
+    width: 200px;
+    display: block;
+    background: #EEE;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-transition: opacity .1s ease-out;
+    -moz-transition: opacity .1s ease-out;
+    -o-transition: opacity .1s ease-out;
+    transition: opacity .1s ease-out;
+    margin: 0 auto;
+    border: 4px solid #FFF;
 }
     </style>
 
@@ -1527,13 +1601,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="bio">
        
         <h1 id="titlehome">MARKETING DIGITAL CON ÉNFASIS EN SEO</h1> 
-        <p>Tengo más de 10 años de experiencia en Marketing Digital. He sido docente en diferentes Universidades y consultor para diferentes empresas en sectores como Textil, Consumo Masivo, Retail, Inmobiliario, Financiero. Participo como blogger en Hubspot, Semrush y otros blogs relacionados con Marketing Digital, SEO, Conversión y Data. Comparte contenido constantemente aquí en mi blog o en otras redes.</p>
-       
+        <p>Mi nombre es Jorge Jaramillo; estoy trabajando en un proyecto que me encanta, se trata de un curso de Marketing Digital con énfasis en SEO el cual planeo lanzar en los próximos meses. 
+Si tienes interés por este Curso de Marketing Digital, puedes suscribirte y recibirás un 50% de descuento justo cuando salga el curso.
+            
+            <a class="cta" href="/curso">CONOCER EL CURSO</a>
+        </p>
+        <hr>
+       <a class="portrait" href="http://jorgejaramillo.com/">
+            <img src="http://static.tumblr.com/lmtjaoy/3Oho9p383/jorge-jaramillo-jorgejaramillo.jpg" title="Jorge Jaramillo" class="foto" alt="Jorge Jaramillo">
+        </a>
+       <p>
+            BIO.</p>
+            
+            
 
        
             </div>
 
-            <hr>
             <br>
         
        <h4 class="metadata">Últimas publicaciones</h4>
@@ -1576,10 +1660,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {block:IndexPage} 
         <div class="post">
         {block:Link}{block:Date}
-             <h2 id="post-home">{ShortMonth} {DayOfMonth}, {Year} <a href="{URL}">{Name}</a></h2> 
+<div class="fechahome">
+             <div id="fechashome">{ShortMonth} {DayOfMonth}</div>  <div id="tituloshome"> <h2 id="post-home"><a href="{URL}">{Name}</a></h2> </div>
+</div>
        {/block:Date} {/block:Link}
         </div>
         {/block:IndexPage} 
+
+
+
+
         {block:PermalinkPage}
         <div class="post">
         {block:Link}
@@ -1604,7 +1694,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
          
          
       
-        <!-- inicia text -->
+<!-- inicia text -->
         
         
        
@@ -1613,9 +1703,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {block:Text}
             <!-- si es en el home use h2 para post -->
         {block:Title}{block:Date}
-            <a href="{Permalink}">
-            <h2 id="post-home"><strong>{ShortMonth} {DayOfMonth}, {Year}</strong> {block:RebloggedFrom}{lang:Reblogged}: {/block:RebloggedFrom}{Title}</h2>
-            </a>
+<div class="fechahome">
+ <div id="fechashome">{ShortMonth} {DayOfMonth}</div><div id="tituloshome"> {block:RebloggedFrom}{lang:Reblogged}: {/block:RebloggedFrom}<a href="{Permalink}"><h2 id="post-home">{Title}</h2></a></div>
+            
+</div>
         {/block:Date}{/block:Title}
         {/block:Text}
         </div>
@@ -1630,7 +1721,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             
         {/block:Title}
         {Body}
-        {/block:Text}
+        {/block:Text}  
         </div>
         {/block:PermalinkPage}
         
@@ -1643,10 +1734,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         {block:IndexPage}
        <div class="post" >
-        {block:Quote}
-            <h2 class="quote" id="post-home">&quot;{Quote}&quot;
-           {Source}
-            </h2> 
+        {block:Quote}{block:Date}
+        <div class="fechahome">
+ <div id="fechashome">
+    {ShortMonth} {DayOfMonth}</div><div id="tituloshome"><h2 id="post-home">{Quote} &#8212; {Source}</h2></div>
+    </div>
+          {/block:Date}  
         {/block:Quote}
        </div>
         {/block:IndexPage}
@@ -1734,7 +1827,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     <hr>
              <div class="footer">
-            Theme creado por: <a href="http://jorgejaramillo.com/">Jorge Jaramillo</a> | <a href="http://jorgejaramillo.com/archive">Mapa 2016 </a> | <a href="#">Contacto</a>
+            Theme creado por: <a href="http://jorgejaramillo.com/">Jorge Jaramillo</a> |  <a href="http://jorgejaramillo.com/archive">Mapa 2016 </a> | <a href="#">Contacto </a>
               </div>
               
               
@@ -1746,16 +1839,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
         <form id="search-form" action="/search" method="get">
         
-            <a href="#toggle" id="toggle"><span></span></a>
+            
             <span><button type="submit"><span class="arrow right dark"></span></button>
             <input type="text" name="q" value="{SearchQuery}" placeholder="BUSCADOR" /></span>
-        </form>
+        </form>     
+<a href="http://jorgejaramillo.com/">Jorge Jaramillo</a>
+<a href="http://jorgejaramillo.com/videos" id="videos">Videos</a>
+<a href="http://jorgejaramillo.com/publicaciones" id="publicaciones">Publicaciones</a>
+<a id="ctacurso" href="/curso">IR AL Curso</a> 
         
-       
-        <a href="http://jorgejaramillo.com/">Jorge Jaramillo</a>
-        <a id="ctacurso" href="/curso">IR AL Curso</a> 
-        </div>
-  
+            
+    </div>
     </div>
 
     <!--EXTERNAL JAVASCRIPT-->
@@ -1769,6 +1863,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     
    
     
